@@ -1,1 +1,24 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+
+:root {
+  --accent-font: 'PressStart2P-Regular';
+  --main-font: Inter;
+  --header-weight: 785;
+  --text-weight: 465;
+  --themes-background: #000;
+  --themes-main-color: #00CC14;
+  --hover-color: #00CC14;
+  --hover-color-text: #00CC14;
+  --main-body-heart: #FF0000;
+  --contour: #00CC14;
+  --core: #FF0000;
+  --gradient:
+    repeating-linear-gradient(to right, #000 2px, transparent 2px),
+    repeating-linear-gradient(to bottom, #000 2px, transparent 2px),
+    linear-gradient(to bottom, #007f0c 2px, #004306 2px);
+  --text-size: 18px;
+  --text-stroke: #000000;
+}
+
+

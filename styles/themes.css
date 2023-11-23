@@ -4,3 +4,83 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+  --accent-font: 'PressStart2P-Regular';
+  --main-font: Inter;
+  --header-weight: 785;
+  --text-weight: 465;
+  --themes-background: #000;
+  --themes-main-color: #00CC14;
+  --hover-color: #00CC14;
+  --hover-color-text: #00CC14;
+  --main-body-heart: #FF0000;
+  --contour: #00CC14;
+  --core: #FF0000;
+  --gradient:
+    repeating-linear-gradient(to right, #000 0, #000 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(to bottom, #000 0, #000 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(to bottom, #007f0c, #004306);
+  --text-stroke: #000000;
+}
+
+:root.theme-light {
+  --accent-font: 'PressStart2P-Regular';
+  --main-font: Inter;
+  --themes-background: #FFF;
+  --themes-main-color: #000;
+  --hover-color: #FFF;
+  --hover-color-text: #FFF;
+  --main-body-heart: #FF0000;
+  --contour: #000000;
+  --core: #FF0000;
+  --header-weight: 700;
+  --text-weight: 400;
+  --gradient:
+    repeating-linear-gradient(to right, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --text-stroke: #FFFFFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-font: 'PressStart2P-Regular';
+    --main-font: Inter;
+    --header-weight: 785;
+    --text-weight: 465;
+    --themes-background: #000;
+    --themes-main-color: #00CC14;
+    --hover-color: #00CC14;
+    --hover-color-text: #00CC14;
+    --main-body-heart: #FF0000;
+    --contour: #00CC14;
+    --core: #FF0000;
+    --gradient:
+      repeating-linear-gradient(to right, #000 0, #000 2px, transparent 2px, transparent 4px),
+      repeating-linear-gradient(to bottom, #000 0, #000 2px, transparent 2px, transparent 4px),
+      repeating-linear-gradient(to bottom, #007f0c, #004306);
+    --text-stroke: #000000;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-font: 'PressStart2P-Regular';
+    --main-font: Inter;
+    --themes-background: #FFF;
+    --themes-main-color: #000;
+    --hover-color: #FFF;
+    --hover-color-text: #FFF;
+    --main-body-heart: #FF0000;
+    --contour: #000000;
+    --core: #FF0000;
+    --header-weight: 700;
+    --text-weight: 400;
+    --gradient:
+      repeating-linear-gradient(to right, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+      repeating-linear-gradient(to bottom, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+      repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+    --text-stroke: #FFFFFF;
+  }
+}
