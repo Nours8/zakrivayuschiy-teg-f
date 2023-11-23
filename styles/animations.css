@@ -76,7 +76,7 @@
   animation: sparks 0.3s 0.3s ease-in normal;
 }
 
-@keyframes sparks  {
+@keyframes sparks {
   from {
     opacity: 0;
   }
