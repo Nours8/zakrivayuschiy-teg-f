@@ -383,7 +383,7 @@ dialog {
   inset: 0;
   width: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
   padding: 30px;
-
+  transition: opacity 0.3s ease-in-out;
 }
 
 dialog:not([open]) {
