@@ -23,7 +23,6 @@
   background-image: var(--gradient);
   background-size: cover;
   padding: 0 clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
-  height: 100vh;
   height: 100%;
 }
 
@@ -36,7 +35,7 @@
 .header {
   border: 2px solid var(--themes-main-color, #00CC14);
   background: var(--themes-background, #000);
-  height: clamp(20.1875rem, 19.2852rem + 3.8498vw, 22.75rem);;
+  height: clamp(20.1875rem, 19.2852rem + 3.8498vw, 22.75rem);
   font-family: var(--accent-font);
   color: var(--themes-main-color, #00CC14);
   font-style: normal;
@@ -109,10 +108,9 @@
   transition-timing-function: ease;
 }
 
-.theme-menu__button:disabled  {
+.theme-menu__button:disabled {
   pointer-events: none;
 }
-
 
 .theme-menu__button:disabled::before {
   content: '▶';
@@ -136,7 +134,7 @@
 }
 
 .section:last-of-type {
-  margin-bottom: 52px;
+  margin-bottom: 54px;
 }
 
 .section__title {
@@ -160,6 +158,34 @@
 
 .section__container-image {
   padding-bottom: 1px;
+}
+
+.image-blur {
+  filter: blur(10px);
+}
+
+.image-grayscale {
+  filter: grayscale(80%);
+}
+
+.image-invert {
+  filter: invert(100%);
+}
+
+.image-saturate {
+  filter: saturate(240%);
+}
+
+.image-sepia {
+  filter: sepia(100%);
+}
+
+.image_hue-rotate-red {
+  filter: hue-rotate(40deg);
+}
+
+.image_hue-rotate-violet {
+  filter: contrast(150%);
 }
 
 .section__image {
@@ -230,8 +256,6 @@
 
 .like-icon {
   width: 39px;
-  max-height: 40px;
-  height: 100%;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
   margin-top: -2px;
@@ -268,7 +292,7 @@
   mix-blend-mode: difference;
 }
 
-.button{
+.button {
   display: flex;
   flex-direction: column-reverse;
   background: var(--themes-background, #000);
@@ -355,11 +379,11 @@ dialog open {
 dialog {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: 2px solid var(--themes-main-color, #000);
   background: var(--themes-background, #FFF);
   position: fixed;
   inset: 0;
-  margin: 236px 17px;
   width: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
   padding: 30px;
 
