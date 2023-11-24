@@ -56,7 +56,8 @@
 }
 
 .header__title {
-  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  text-decoration: none;
 }
 
 .header__text {
@@ -261,12 +262,15 @@
   gap: 4px;
 }
 
-.card__icon-button {
+.button__general-style {
   background-color: transparent;
+  border: 2px solid transparent;
+}
+
+.card__icon-button {
   width: 39px;
   max-height: 38px;
   height: 100%;
-  border: 2px solid transparent;
   transition: border-color 0.3s ease;
 }
 
@@ -374,10 +378,18 @@
   scale: 1 1;
 }
 
-.floppy:nth-child(1) {
+.button.floppy {
   width: 28px;
   height: 28px;
 }
+
+.button .floppy {
+  margin-top: -4px;
+  width: 28px;
+  height: 28px;
+}
+
+
 
 .container__dialog-content .floppy {
   width: 39px;
@@ -400,7 +412,6 @@ dialog {
   position: fixed;
   inset: 0;
   min-width: 341px;
-  min-height: 195px;
   padding: 30px;
   transition: opacity 0.3s ease-in-out;
 }
@@ -434,12 +445,12 @@ dialog:not([open]) {
 }
 
 .close-button {
-  background-color: transparent;
   border: 2px solid var(--themes-main-color);
   position: relative;
   transition: box-shadow 0.3s ease;
   width: 257px;
   min-height: 38px;
+  text-transform: uppercase;
 }
 
 .close-button:focus {
@@ -475,19 +486,29 @@ dialog:not([open]) {
     min-height: 696px;
   }
 
+  .section__image-label {
+    right: 26px;
+  }
+
+  .section:first-of-type .section__image-label {
+    top: 60px;
+    right: 26px;
+  }
+
   .button {
     width: 336px;
     min-height: 55px;
     flex-direction: row;
   }
 
-  .button .button__text {
-    padding: 18px 0;
+  .button .floppy {
+    width: 21px;
+    height: 21px;
   }
 
   dialog {
     min-width: 357px;
-    min-height: 193px;
+    gap: 28px;
   }
 
   .close-button {
