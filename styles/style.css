@@ -288,9 +288,6 @@
   outline: none;
 }
 
-/* Очень надеюсь, что селектор ниже достаточно хорошо описывает общие стили для кнопок
-и я пройду дальше, а не отлечу на месяц (без агрессии, просто обидно будет) */
-
 .common-button-styles {
   background-color: var(--themes-background);
   border: 2px solid var(--themes-main-color, #00CC14);
